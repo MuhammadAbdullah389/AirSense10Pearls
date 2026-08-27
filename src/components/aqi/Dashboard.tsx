@@ -327,7 +327,7 @@ export function Dashboard({
 
       <ForecastCharts hours={hours} days={days} />
       <ShapPanel shap={forecast.shap} features={forecast.features} hours={hours} />
-      <HourlyTable hours={hours} />
+      <HourlyTable hours={hours} shap={forecast.shap} />
 
       <footer className="text-muted-foreground pb-6 text-center text-xs">
         Custom US AQI model · scale 0–{AQI_MAX} · predictions refresh on demand
