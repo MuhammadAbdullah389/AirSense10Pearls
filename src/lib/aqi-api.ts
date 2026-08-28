@@ -1,7 +1,7 @@
 import { buildHours, groupByDay, parseBaseTimestamp, type HourPoint } from "./aqi";
 
 export const API_STORAGE_KEY = "aqi_api_url";
-export const DEFAULT_API_URL = "http://localhost:5000/predict";
+export const DEFAULT_API_URL = "https://aqi-predictor-shine.onrender.com/predict";
 
 export function getApiUrl(): string {
   if (typeof window === "undefined") return DEFAULT_API_URL;
